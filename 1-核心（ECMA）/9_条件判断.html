@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条件判断</title>
+</head>
+<body>
+        <script>
+            var distance = 10;
+            var nowDistance = 5;
+            if( nowDistance <= distance ) {
+                console.log("自动驾驶");
+            }else{
+                console.log("人为驾驶");
+            }
+
+
+            var weather = ['sunny','rainy','snowing']
+            var todayWeather = weather[3];
+            if(todayWeather == weather[0]){
+                console.log("今天是晴天可以出去玩耍")
+            }else if(todayWeather == weather[1]){
+                console.log("今天市下雨天，在家呆着")
+            }else if(todayWeather == weather[2]){
+                console.log("今天是雪天，出去滑雪吧")
+            }else{
+                console.log("输入的天气有错误，请重新输入");
+            }
+        </script>
+</body>
+</html>
