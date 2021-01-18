@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字和字符串</title>
+</head>
+<body>
+    <script>
+        // 关于数字和字符串，js可以自动将数字和字符串拼接的时候转换为字符串
+        var sum = 'hlt' + 666;
+        alert(sum);
+        //所有带引号的数字都是字符串
+        var sum1 = '18' + '50';
+        alert(sum1);
+        alert(typeof sum1);
+
+        //数字和字符串之间的转换
+
+        //隐式转换
+        var num = 234;
+        var myStr = num + '';
+        alert(myStr);
+        alert( typeof myStr);
+        //js中提供的方法来操作
+        //字符串转数字
+        var myNum = Number(myStr);
+        alert(myNum);
+        alert(typeof myNum);
+        //数字转字符串
+        var myStr2 = num.toString();
+        alert(myStr2);
+        alert(typeof myStr2);
+        //NaN的特殊情况  NaN =  not a number
+        var a = 'jkjk788';
+        var toNum = Number(a);
+        alert(toNum);
+        alert(typeof toNum);  //number
+    </script>
+</body>
+</html>
